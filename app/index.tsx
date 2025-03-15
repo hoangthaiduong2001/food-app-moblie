@@ -28,7 +28,10 @@ const styles = StyleSheet.create({
     color: "orange",
     marginVertical: 10,
   },
-  footer: {},
+  footer: {
+    fontSize: 25,
+    color: "green",
+  },
 });
 const WelcomePage = () => {
   return (
