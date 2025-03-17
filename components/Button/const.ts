@@ -1,18 +1,20 @@
 import { StyleSheet } from "react-native";
 
-export const styledButton = StyleSheet.create({
-  container: {
-    borderWidth: 1,
-    borderColor: "green",
-    borderRadius: 10,
-    paddingHorizontal: 15,
+export const stylesButton = StyleSheet.create({
+  button: {
+    backgroundColor: "white",
     paddingVertical: 10,
-    flexDirection: "row",
-    gap: 10,
+    paddingHorizontal: 24,
     alignItems: "center",
-    backgroundColor: "orange",
+    justifyContent: "center",
+    flexDirection: "row",
+    borderRadius: 50,
+    borderWidth: 1,
   },
-  text: {
+  buttonText: {
+    color: "black",
     fontSize: 16,
+    fontWeight: "bold",
+    marginLeft: 8,
   },
 });

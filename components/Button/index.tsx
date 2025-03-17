@@ -1,25 +1,26 @@
 import React from "react";
 import { Pressable, Text, View } from "react-native";
+import { stylesButton } from "./const";
 import { IButton } from "./type";
 
 const Button = ({
   title,
   onPress,
-  styledView,
-  styleContent,
+  styledButton,
+  styleButtonText,
   icon,
 }: IButton) => {
   return (
     <Pressable
       style={({ pressed }) => ({
         opacity: pressed ? 0.5 : 1,
-        alignSelf: "flex-start",
+        flex: 1,
       })}
       onPress={onPress}
     >
-      <View style={styledView}>
+      <View style={[stylesButton.button, styledButton]}>
         {icon}
-        <Text style={styleContent}>{title}</Text>
+        <Text style={[stylesButton.buttonText, styleButtonText]}>{title}</Text>
       </View>
     </Pressable>
   );
